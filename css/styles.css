@@ -32,12 +32,23 @@ a {
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
 main {
+
   max-width: 1200px;
+  min-height: 100vh;
   margin:auto;
  position: relative; 
  text-align: center;
+ }
  
+ main nav img { /*foto*/
+  width: 90%;
+  max-width: 400px;
+  height:auto;
+  border-radius: 60%;
+  margin-top: 120px; 
+
 }
+
 Body {
  min-height: 100vh;
  width: 100%;
@@ -73,13 +84,19 @@ header nav div img { /*logo*/
 header nav ul{ 
   margin: 0;
   padding: 0; 
-  display:flex;
   
 }
 
+header nav ul li{
+  display:inline-block;
+
+}
+
 header nav ul li a {
-  margin-right: 20px;
-  margin-left: 20px;
+  
+  margin-right: 8px;
+  margin-left: 8px;
+  display: block;
  
  
 }
@@ -88,14 +105,6 @@ header nav ul li a:hover {
  
 }
 
-main nav img { /*foto*/
-  width: 400px;
-  height:auto;
-  border-radius: 60%;
-  margin-top: 120px; 
-  padding: 20px;;
-  
-}
 
 .texto {
   align-items: center;
@@ -181,7 +190,7 @@ h1{
   font-size: 50px;
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 50px;
 }
 
 .iconos a:hover{
